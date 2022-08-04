@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function fn1(){
+            var rd1=document.getElementById("rd1");
+
+            var rd2=document.getElementById("rd2");
+            if(rd1.checked==true)
+            {
+
+                alert("The channel selected is:"+rd1.value);
+            }
+            else if(rd2.checked==true){
+
+                   alert("The channel selected is:"+rd2.value);
+            
+            }
+            else{
+                   alert("The No channel is selected");
+    
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <input id="rd1" name="grp1" type="radio" value="Simple Snippets">Simple Snippets.<br>
+   <input id="rd2" name="grp1" type="radio" value="Telusko Snippets">Telusko Snippets<br> 
+   <button onclick="fn1()" id="btn1">Click Me </button>
+</body>
+</html>

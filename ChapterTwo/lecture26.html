@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+
+        // function validate(){
+        //     var username=document.getElementById("uname")
+        //     var password=document.getElementById("pass")
+
+        //     if(username.value.trim() ==""|| password.value.trim() =="")
+        //     {
+        //         alert("No Blank value is allowed");
+        //         return false;
+        //     }
+        //     else{
+
+        //         return true;
+        //     }
+        // }
+
+        function validate(){
+
+            var uname=document.getElementById("uname");
+            var password =document.getElementById("pass");
+
+            if(uname.value.trim()=="")
+            {
+
+                //alert("Blank username");
+                document.getElementById("nlable").style.visibility="true";
+                //uname.style.border="solid 3px red";
+                return false;
+            }
+            else if(password.value.trim()=="")
+            {
+
+                //alert("Blank password")
+                document.getElementById("plabel").style.visibility="true";
+                return false;
+            }
+            else if(password.value.trim().length<5)
+            {
+                //alert("Password too short")
+                document.getElementById("plength").style.visibility="true";
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+
+
+
+    </script>
+</head>
+<body>
+
+    <form onsubmit="return validate();"  action="message.html">
+
+    <input id="uname" placeholder="User Name"
+    type="text" /> 
+    <label id="nlable" style="color: red; visibility: hidden;" >User name is Blank</label>
+    <br><br>
+
+    <input id="pass" placeholder="Password" type="password" 
+    /> 
+    <label id="plabel" style="color: brown; visibility: hidden;">Password is Blank</label>
+    <br><br>
+    <label id="plength" style="color: red; visibility: hidden;">Password Length is less than 5</label>
+
+    <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function changeStyle()
+        {
+            var para=document.getElementsByTagName("p");
+            para[0].style.fontSize=25;
+            para[1].style.color="red";
+            para[2].style.background="green";
+            para[3].style.border=5;
+            para[4].style.fontFamily="Times";
+        }
+    </script>
+</head>
+<body>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p>This is paragraph 3</p>
+    <p>This is paragraph 4</p>
+    <p>This is paragraph 5</p>
+    <br>
+
+    <button onclick="changeStyle()">Click Me</button>
+</body>
+</html>

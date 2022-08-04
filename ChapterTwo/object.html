@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!--<script src='main.js'></script>-->
+    <script>
+        var str1="str";
+        var Car={
+            car_brand:"Tesla",
+            car_model:"Model 3",
+            price:35000,
+            teslaAutoPilot:function(){
+                document.write("<h2> This car has Auto pilot </h2>")
+            }
+        }
+        //Car.price="Hello";
+        delete Car.price;
+        document.write("<h2>"+typeof(str1)+"</h2>")
+        document.writeln("<h2>"+typeof(Car.price)+"</h2>");
+    </script>
+</head>
+<body>
+    <h1>Heading One</h1>
+    <div id="one">
+    <p>Div One</p>
+    </div>
+    <div class="two">
+    <p>Div Two</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!--<script src='main.js'></script>-->
+    <script>
+        function fn1(){
+
+var select=document.getElementById("selectbox");
+alert(select.options[select.selectedIndex].value);
+        }
+    </script>
+
+</head>
+<body>
+
+        <select id="selectbox">
+            <Option value="Simple Snippets">Simple Snippets</Option>
+            <Option value="Telusko Snippets">Telusko Snippets</Option>
+            <Option value="MKBHO Snippets">MKBHO Snippets</Option>
+        </select>
+        <button onclick="fn1()">Click Me</button>
+</body>
+</html>
